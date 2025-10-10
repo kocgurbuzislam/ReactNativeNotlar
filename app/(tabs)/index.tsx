@@ -1,52 +1,34 @@
-import { Image } from 'expo-image';
-import { Platform, StyleSheet, View, Text } from 'react-native';
-
-import { HelloWave } from '@/components/hello-wave';
-import ParallaxScrollView from '@/components/parallax-scroll-view';
-import { ThemedText } from '@/components/themed-text';
-import { ThemedView } from '@/components/themed-view';
-import { Link } from 'expo-router';
-
+import React from 'react';
+import { StyleSheet, View } from 'react-native';
+import { ArrowFunction } from '../functionComponents/ArrowFunction';
+import { Person } from '../props/Person';
 
 export default function HomeScreen() {
   return (
     <View style={styles.container}>
-      <View style={{ width: 350,height: 100,//backgroundColor: "#E8E8E8", 
-        flexDirection: "row" /*coulmn*/
-      }}>
 
-        <View style={{
-          //backgroundColor: "#FFF1C8",
-          alignItems: "center",//flex-start, center, flex-end
-          justifyContent: "center",//flex-start, center, flex-end, space-between, space-around
-          flex: 2
-        }}>
-          <View style={{width: 70, height: 70,borderRadius: 35,
-            backgroundColor: "gray",
 
-          }}></View>
-        </View>
-        <View style={{ justifyContent: "center", flex: 4/*2*/ }}>
+      <Person name='İSO' surname='KGB' 
+      color='#EAEAEA'></Person>
+      <Person name='AZAT' surname='KGB' 
+      color='#EAEAEA'></Person>
 
-          <Text style={{ fontSize: 17, fontWeight: "bold" }}> iso kgb </Text>
+      <Person name= {'ALİ'} surname={'KGB'}
+      color={'#94ac91ff'}></Person>
 
-          <Text style={{ fontSize: 14, color: "gray", marginTop: 5 }}>
-            isokgb@gmail.com
-          </Text>
-        </View>
-        <View style={{
-          //backgroundColor: "#A0E7E5", 
-          alignContent: "center",
-          justifyContent: "center",
-          flex: 1/*2*/
-        }}>
 
-          <Text style={{fontSize: 30,fontWeight: "bold",color: "black",
-      }}>
-            {">"}
-          </Text>
-        </View>
-      </View>
+
+
+
+      {/*
+        <Foo2 />
+        <Foo2 />
+        <Foo2 />
+        <Foo2/>
+        
+        <ArrowFunction/>
+        */}
+
     </View>
   );
 }

@@ -1,5 +1,5 @@
-import { StyleSheet, View, Text } from "react-native";
 import AntDesign from '@expo/vector-icons/AntDesign';
+import { StyleSheet, View } from "react-native";
 
 
 export default function FlexBox_2() {
