@@ -2,11 +2,24 @@ import React from 'react';
 import { StyleSheet, View } from 'react-native';
 import { ArrowFunction } from '../functionComponents/ArrowFunction';
 import { Person } from '../props/Person';
+import {Counter} from '../stateKullanimi/Counter';
+import { Foo3} from '../LifecycleKullanimi/Foo3';
 
 export default function HomeScreen() {
   return (
     <View style={styles.container}>
 
+
+      <Foo3 />
+      
+
+
+
+      {/*
+
+      <Counter start={0} />
+       <Counter start={100} />
+        <Counter start={-78} />
 
       <Person name='İSO' surname='KGB' 
       color='#EAEAEA'></Person>
@@ -15,12 +28,6 @@ export default function HomeScreen() {
 
       <Person name= {'ALİ'} surname={'KGB'}
       color={'#94ac91ff'}></Person>
-
-
-
-
-
-      {/*
         <Foo2 />
         <Foo2 />
         <Foo2 />
