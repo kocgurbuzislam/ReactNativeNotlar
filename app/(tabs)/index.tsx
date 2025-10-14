@@ -2,20 +2,24 @@ import React from 'react';
 import { StyleSheet, View } from 'react-native';
 import { ArrowFunction } from '../functionComponents/ArrowFunction';
 import { Person } from '../props/Person';
-import {Counter} from '../stateKullanimi/Counter';
-import { Foo3} from '../LifecycleKullanimi/Foo3';
+import { Counter } from '../stateKullanimi/Counter';
+import { Foo3 } from '../LifecycleKullanimi/Foo3';
+import { Counter2 } from '../useEffectKullanimi/Counter2';
 
 export default function HomeScreen() {
   return (
     <View style={styles.container}>
 
 
-      <Foo3 />
-      
+      <Counter2 />
+
 
 
 
       {/*
+
+      
+      <Foo3 />
 
       <Counter start={0} />
        <Counter start={100} />
