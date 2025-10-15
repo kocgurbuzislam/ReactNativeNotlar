@@ -5,20 +5,20 @@ import { Person } from '../props/Person';
 import { Counter } from '../stateKullanimi/Counter';
 import { Foo3 } from '../LifecycleKullanimi/Foo3';
 import { Counter2 } from '../useEffectKullanimi/Counter2';
-
+import ModalKullanimi from '../modalKullanimi/ModalKullanimi';
+import {Box} from '../touchableOpacityKullanimi/Box';
 export default function HomeScreen() {
   return (
     <View style={styles.container}>
 
 
-      <Counter2 />
-
+      <Box/>
 
 
 
       {/*
-
-      
+       <ModalKullanimi />
+      <Counter2 />
       <Foo3 />
 
       <Counter start={0} />
