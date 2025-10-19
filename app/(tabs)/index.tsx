@@ -7,12 +7,13 @@ import { Foo3 } from '../LifecycleKullanimi/Foo3';
 import { Counter2 } from '../useEffectKullanimi/Counter2';
 import ModalKullanimi from '../modalKullanimi/ModalKullanimi';
 import {Box} from '../touchableOpacityKullanimi/Box';
+import Box2 from '../TouchableWithoutFeedbackKullanimi/Box2';
 export default function HomeScreen() {
   return (
     <View style={styles.container}>
 
 
-      <Box/>
+      <Box2/>
 
 
 
