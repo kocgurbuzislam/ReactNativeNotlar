@@ -8,16 +8,21 @@ import { Counter2 } from '../useEffectKullanimi/Counter2';
 import ModalKullanimi from '../modalKullanimi/ModalKullanimi';
 import {Box} from '../touchableOpacityKullanimi/Box';
 import Box2 from '../TouchableWithoutFeedbackKullanimi/Box2';
+import ActivityIndicatorKullanimif from '../activityIndicatorKullanimi/ActivityIndicator';
+import {MyButton} from '../activityIndicatorKullanimi/MyButton';
+
 export default function HomeScreen() {
   return (
     <View style={styles.container}>
 
-
-      <Box2/>
-
-
+     
+      <MyButton/>
+      
+      
 
       {/*
+      <ActivityIndicatorKullanimif />
+      <Box2/>
        <ModalKullanimi />
       <Counter2 />
       <Foo3 />
