@@ -1,26 +1,39 @@
 import React from 'react';
-import { StyleSheet, View } from 'react-native';
+import { StyleSheet, View,ScrollView } from 'react-native';
 import { ArrowFunction } from '../functionComponents/ArrowFunction';
 import { Person } from '../props/Person';
 import { Counter } from '../stateKullanimi/Counter';
 import { Foo3 } from '../LifecycleKullanimi/Foo3';
 import { Counter2 } from '../useEffectKullanimi/Counter2';
 import ModalKullanimi from '../modalKullanimi/ModalKullanimi';
-import {Box} from '../touchableOpacityKullanimi/Box';
+import { Box } from '../touchableOpacityKullanimi/Box';
 import Box2 from '../TouchableWithoutFeedbackKullanimi/Box2';
 import ActivityIndicatorKullanimif from '../activityIndicatorKullanimi/ActivityIndicator';
-import {MyButton} from '../activityIndicatorKullanimi/MyButton';
+import { MyButton } from '../activityIndicatorKullanimi/MyButton';
+import Switchf from '../switchKullanimi/Switchf';
+import BoxScroll from '../scrollKullanimi/BoxScroll';
+
 
 export default function HomeScreen() {
   return (
     <View style={styles.container}>
 
-     
-      <MyButton/>
-      
-      
+      <ScrollView>
+        <BoxScroll text={"Text1"} color={"#ff1a1aff"} />
+        <BoxScroll text={"Text2"} color={"#1e6cdaff"} />
+        <BoxScroll text={"Text3"} color={"#16bd29ff"} />
+        <BoxScroll text={"Text4"} color={"#0a3d69ff"} />
+        <BoxScroll text={"Text5"} color={"#57074aff"} />
+        <BoxScroll text={"Text6"} color={"#50965bff"} />
+        <BoxScroll text={"Text7"} color={"#9da21dff"} />
+      </ScrollView>
+
+
+
 
       {/*
+      <Switchf/>
+      <MyButton/>
       <ActivityIndicatorKullanimif />
       <Box2/>
        <ModalKullanimi />
