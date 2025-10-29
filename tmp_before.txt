@@ -18,7 +18,8 @@ import { Message } from '../flatListKullanimi/Message';
 import { MessageList } from '../flatListKullanimi/MessageList';
 import { Story } from '../flatListKullanimi/Story';
 import { StoryList } from '../flatListKullanimi/StoryList';
-import Title, { Item } from '../SectionListKullanimi/components'
+import Title from '../SectionListKullanimi/components'
+import Item from '../SectionListKullanimi/components'
 import { SectionList } from 'react-native';
 
 const MENU = [
@@ -78,23 +79,18 @@ const MENU = [
       },
       {
         id: "3", title: "Makarna"
-      },
-    ],
-  },
-];
-
+      }
+    ]
+  }
+]
 export default function HomeScreen() {
   return (
     <View style={styles.container}>
 
-     <SectionList
-     style={{width:"100%"}}
-     sections={MENU}
-     keyExtractor={(item, index) => item.id + '-' + index}
+     <SectionList style={{width:"80%"}} sections={MENU}
+     keyExtractor={(item) => item.id}
      renderItem={({item}) => <Item name={item.title}/>}
      renderSectionHeader={({section}) => <Title name={section.title} />}
-     contentContainerStyle={{ alignItems: 'center', paddingBottom: 24 }}
-     stickySectionHeadersEnabled={false}
      />
 
 
@@ -178,3 +174,4 @@ const styles = StyleSheet.create({
     position: 'absolute',
   },
 });
+

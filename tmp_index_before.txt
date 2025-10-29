@@ -78,17 +78,15 @@ const MENU = [
       },
       {
         id: "3", title: "Makarna"
-      },
-    ],
-  },
-];
-
+      }
+    ]
+  }
+]
 export default function HomeScreen() {
   return (
     <View style={styles.container}>
 
      <SectionList
-     style={{width:"100%"}}
      sections={MENU}
      keyExtractor={(item, index) => item.id + '-' + index}
      renderItem={({item}) => <Item name={item.title}/>}
