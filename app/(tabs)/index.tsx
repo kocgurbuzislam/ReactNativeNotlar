@@ -16,18 +16,19 @@ import FlatListf from '../flatListKullanimi/FlatListf';
 import { Images } from '../flatListKullanimi/Images';
 import { Message } from '../flatListKullanimi/Message';
 import { MessageList } from '../flatListKullanimi/MessageList';
+import { Story } from '../flatListKullanimi/Story';
+import { StoryList } from '../flatListKullanimi/StoryList';
 export default function HomeScreen() {
   return (
     <View style={styles.container}>
 
 
-      <MessageList/>
-      
-
-
+      <StoryList/>
+    
 
 
       {/*
+      <MessageList/>
       <FlatList
       data={Images}
       keyExtractor={(item) => item.id}
@@ -82,6 +83,9 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     flex: 1,
+    paddingTop:50,
+    paddingRight:5,
+    paddingLeft:5
   },
   titleContainer: {
     flexDirection: 'row',
