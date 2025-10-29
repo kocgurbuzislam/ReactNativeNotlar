@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, View,ScrollView,FlatList,Image } from 'react-native';
+import { StyleSheet, View, ScrollView, FlatList, Image } from 'react-native';
 import { ArrowFunction } from '../functionComponents/ArrowFunction';
 import { Person } from '../props/Person';
 import { Counter } from '../stateKullanimi/Counter';
@@ -13,25 +13,27 @@ import { MyButton } from '../activityIndicatorKullanimi/MyButton';
 import Switchf from '../switchKullanimi/Switchf';
 import BoxScroll from '../scrollKullanimi/BoxScroll';
 import FlatListf from '../flatListKullanimi/FlatListf';
-import {Images} from '../flatListKullanimi/Images';
-
-
+import { Images } from '../flatListKullanimi/Images';
+import { Message } from '../flatListKullanimi/Message';
+import { MessageList } from '../flatListKullanimi/MessageList';
 export default function HomeScreen() {
   return (
     <View style={styles.container}>
 
+
+      <MessageList/>
+      
+
+
+
+
+      {/*
       <FlatList
       data={Images}
       keyExtractor={(item) => item.id}
       renderItem={({item}) => <Image style={{width:150, height:150}} source={{uri:item.image}}/>}
       >
-
       </FlatList>
-     
-
-
-
-      {/*
        <FlatListf/>
       <ScrollView>
         <BoxScroll text={"Text1"} color={"#ff1a1aff"} />
