@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, View,ScrollView } from 'react-native';
+import { StyleSheet, View,ScrollView,FlatList,Image } from 'react-native';
 import { ArrowFunction } from '../functionComponents/ArrowFunction';
 import { Person } from '../props/Person';
 import { Counter } from '../stateKullanimi/Counter';
@@ -12,12 +12,27 @@ import ActivityIndicatorKullanimif from '../activityIndicatorKullanimi/ActivityI
 import { MyButton } from '../activityIndicatorKullanimi/MyButton';
 import Switchf from '../switchKullanimi/Switchf';
 import BoxScroll from '../scrollKullanimi/BoxScroll';
+import FlatListf from '../flatListKullanimi/FlatListf';
+import {Images} from '../flatListKullanimi/Images';
 
 
 export default function HomeScreen() {
   return (
     <View style={styles.container}>
 
+      <FlatList
+      data={Images}
+      keyExtractor={(item) => item.id}
+      renderItem={({item}) => <Image style={{width:150, height:150}} source={{uri:item.image}}/>}
+      >
+
+      </FlatList>
+     
+
+
+
+      {/*
+       <FlatListf/>
       <ScrollView>
         <BoxScroll text={"Text1"} color={"#ff1a1aff"} />
         <BoxScroll text={"Text2"} color={"#1e6cdaff"} />
@@ -28,10 +43,6 @@ export default function HomeScreen() {
         <BoxScroll text={"Text7"} color={"#9da21dff"} />
       </ScrollView>
 
-
-
-
-      {/*
       <Switchf/>
       <MyButton/>
       <ActivityIndicatorKullanimif />
